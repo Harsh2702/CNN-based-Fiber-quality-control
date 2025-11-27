@@ -10,12 +10,10 @@ from torch.utils.data import Dataset
 from torchvision import transforms
 
 # ---------------- CONFIG ----------------
-CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=manustwendeldevsa;AccountKey=arWNJgU1/rQorGBlDvtPvSz88EwC+RL4c7Om3vqWNpIGOfG3bRrFQ1JowKZX5l6ozHdjuqSBcw+2+AStrUMHcg==;EndpointSuffix=core.windows.net"
-CONTAINER_NAME = "inferenceupload"
+CONNECTION_STRING = "<Connection String>"
+CONTAINER_NAME = "Conatainername"
 FOLDER_NAMES = [
-    "15a_ps2", "15a_ps3", "15b_ps2", "15b_ps3",
-    "17a_ps2", "18a_ps2", "18a_ps3", "18b_ps2", "18b_ps3",
-    "20a_ps2_1", "20a_ps2_2"
+    "F1", "F2", "F3", "F10"
 ]
 
 blob_service_client = BlobServiceClient.from_connection_string(CONNECTION_STRING)
